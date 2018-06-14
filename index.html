@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name = "viewport" content="width=device-width">
+	<meta charset="UTF-8">
+	<title>Instagram</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/grid.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<!-- Sección header -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 header">
+					<img src="./assets/img/twitter-logo.png" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Sección textarea, botón y contenedor mensajes -->
+	<section class="center">
+		<div class="container main">
+			<div class="row">
+				<div class="col-12">
+					<div class="col-6">
+						<div class="message">
+						<p class="perfil"><h3>Reto de codigo</h3>
+						Hola soy front-end developer
+					    </p>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="message">
+							<div id="count" class="count">
+							</div>
+						    <textarea class="txt" name="caracteres" id="comment" placeholder="Añade un comentario..." onKeyDown="tecla()" maxlength="140"></textarea>
+						    <button type="submit" id="btnDisable">
+							<i class="fas fa-plus" aria-hidden="true"></i>twittear</button>
+					       
+						</div>
+				    </div>
+			    </div> 
+			</div>
+			<!-- contenedor comentarios -->
+			<div class="row">
+				<div class="col-12" id="cont"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Script Files -->
+		<script src="https://use.fontawesome.com/7873633050.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
